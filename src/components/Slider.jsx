@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import {ArrowLeftOutlined,ArrowRightOutlined } from '@material-ui/icons'
 import { Button} from 'react-bootstrap';
+import { sliderItems } from '../data';
 
 
 const Container =styled.div`
@@ -9,7 +10,6 @@ const Container =styled.div`
         height:100vh;
         display:flex;
         overflow:hidden;
-        /* background-color: coral; */
 `;
 
 const Arrow=styled.div`
@@ -28,11 +28,14 @@ const Arrow=styled.div`
     cursor:pointer;
     opacity:0.5;
     margin:auto;
+    z-index:2;
     `;
 
     const Wrapper=styled.div`
     height: 100%;
     display: flex;
+    transition:all 1.5s ease;
+    transform: translateX(${(props)=>props.slideIndex*-100}vw); 
     `
     const Slide=styled.div`
     width:100vw;
@@ -67,56 +70,41 @@ const Arrow=styled.div`
     `;
 
 
-const slider = () => {
+const Slider = () => {
+    const[slideIndex,setSlideIndex]=useState(0);
+    const handleClick=(direction)=>{
+
+        if(direction==="left")
+        {
+            setSlideIndex(slideIndex>0? slideIndex-1:2)
+        }else{
+            setSlideIndex(slideIndex<2? slideIndex+1:0);
+        }
+    };
     return (
         <div>
         <Container>
-        <Arrow direction="left">
+        <Arrow direction="left" onClick={()=>handleClick("left")}>
             <ArrowLeftOutlined/>
         </Arrow>
-        <Wrapper>
-        <Slide bg="fcf1ed">
+        <Wrapper slideIndex={slideIndex}>
+        {sliderItems.map((item)=>(
+            <Slide bg={item.bg} key={item.id}>
         <InfoContainer>
-            <Title>Watch at Cheapest Rate</Title>
+            <Title>{item.title}</Title>
             <Desc>
-                Nostrud nulla aliquip deserunt deserunt ullamco ex nulla pariatur. Veniam et ea sint reprehenderit quis aute amet incididunt Lorem sunt cupidatat ipsum incididunt eiusmod. Occaecat incididunt incididunt aliqua occaecat enim laborum fugiat voluptate occaecat occaecat amet dolore.
+               {item.desc}
             </Desc>
             {/* <Button>Shop Now</Button> */}
             <Button variant="outline-dark"  size="lg">Shop Now</Button>{' '}
             </InfoContainer>
             <ImageContainer>
-                <Image src="https://staticimg.titan.co.in/production/promotions/so_onyx/D3/banner-titan1.jpg"></Image>
+                <Image src={item.img}/>
             </ImageContainer>
             </Slide>
-            <Slide>
-        <InfoContainer>
-            <Title>Holiday Sale
-            </Title>
-            <Desc>
-                Nostrud nulla aliquip deserunt deserunt ullamco ex nulla pariatur. Veniam et ea sint reprehenderit quis aute amet incididunt Lorem sunt cupidatat ipsum incididunt eiusmod. Occaecat incididunt incididunt aliqua occaecat enim laborum fugiat voluptate occaecat occaecat amet dolore.
-            </Desc>
-            {/* <Button>Shop Now</Button> */}
-            <Button variant="outline-dark"  size="lg">Shop Now</Button>{' '}
-            </InfoContainer>
-            <ImageContainer>
-                <Image src="https://assets.materialup.com/uploads/b8c09f81-df2d-4d81-bd95-58fa1413063d/preview.png"></Image>
-            </ImageContainer>
-            </Slide>
-            <Slide bg="fcf1ed">
-        <InfoContainer>
-            <Title>Hostel Sale</Title>
-            <Desc>
-                Nostrud nulla aliquip deserunt deserunt ullamco ex nulla pariatur. Veniam et ea sint reprehenderit quis aute amet incididunt Lorem sunt cupidatat ipsum incididunt eiusmod. Occaecat incididunt incididunt aliqua occaecat enim laborum fugiat voluptate occaecat occaecat amet dolore.
-            </Desc>
-            {/* <Button>Shop Now</Button> */}
-            <Button variant="outline-dark"  size="lg">Shop Now</Button>{' '}
-            </InfoContainer>
-            <ImageContainer>
-                <Image src="https://staticimg.titan.co.in/production/promotions/so_onyx/D3/banner-titan1.jpg"></Image>
-            </ImageContainer>
-            </Slide>
+        ))}
         </Wrapper>
-        <Arrow  direction="right">
+        <Arrow  direction="right" onClick={()=>handleClick("right")}>
             <ArrowRightOutlined/>
         </Arrow>
         </Container>
@@ -124,4 +112,4 @@ const slider = () => {
                     )
                 }
 
-export default slider
+export default Slider
