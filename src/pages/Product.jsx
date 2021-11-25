@@ -1,8 +1,12 @@
+import { Button } from "react-bootstrap";
 import styled from "styled-components"
 import Footer from "../components/Footer";
 import Navbars from "../components/Navbars";
 
-const Container=styled.div``;
+const Container=styled.div`
+    /* height:100vh;
+    width:100vw; */
+    `;
 
 
 const Wrapper=styled.div`
@@ -13,13 +17,15 @@ const Wrapper=styled.div`
 
 const ImgContainer=styled.div`
     flex:1;
+    height:70%fit-content;
+    width:70%;
     `;
+
 const Image=styled.img`
     width:80%;
     height:80%;
     object-fit: cover;
     `;
-
 
 const InfoContainer=styled.div`
     flex:1;
@@ -28,6 +34,11 @@ const InfoContainer=styled.div`
 const Title=styled.h1`
     font-weight: 300;
     `;
+
+    const Features=styled.p`
+    margin:20px 0px;
+        `;
+
 const Desc=styled.p`
 margin:20px 0px;
     `;
@@ -35,6 +46,14 @@ const Price=styled.span`
     font-weight: 100;
     font-size: 40px;
     `;
+
+const Amount=styled.div`
+    display:flex;
+    margin:20px 0px;
+    align-items:center;
+    justify-content:flex-start;
+    `;
+
 
 
 
@@ -47,13 +66,12 @@ const Product = () => {
         <Wrapper>
             <ImgContainer>
                 <Image src="https://assetscdn1.paytm.com/images/catalog/product/B/BA/BAGRUGZAK-WATERCB-E8493971BF3C457/1596790349548_0..jpg?imwidth=320&impolicy=hq"/>
-
             </ImgContainer>
             <InfoContainer>
                 <Title>
                 Rugzak Waterproof Bag
                 </Title>
-                <Desc>
+                <Features>
                 <h3>Key Features</h3>
                 <ul>
                     <li>Type: Backpack</li>
@@ -66,20 +84,21 @@ const Product = () => {
                     <li>Material: Polyester</li>
                     <li>Total Compartments: 3</li>
                     </ul>
-                    <br/>
-                <h3>Product Description</h3>
-                    Rug-Zak Rugzak waterproof expandable 15.6 inches laptop bag with rain cover (grey) Small (Upto 17 inches) Waterproof Laptop Backpack - Grey.
-                    Id velit ea enim ex laborum ut officia et.Ipsum proident tempor elit ullamco ad sunt ut. Et do in adipisicing ea tempor Lorem ex anim qui pariatur fugiat est consectetur. Sunt fugiat cupidatat anim eiusmod sint officia voluptate minim eu pariatur dolore. Sit Lorem exercitation proident officia ut labore id do.
-                </Desc>
+                    {/* <br/> */}
+                </Features>
                 <Price>
                     Rs.1,000
                 </Price>
-        
+                <Amount>
+                <Button variant="outline-dark"  size="sm">ADD TO CART</Button>{' '}
+                </Amount>
+                <Desc>
+                <h3>Product Description</h3>
+                    Rug-Zak Rugzak waterproof expandable 15.6 inches laptop bag with rain cover (grey) Small (Upto 17 inches) Waterproof Laptop Backpack - Grey.Id velit ea enim ex laborum ut officia et.Ipsum proident tempor elit ullamco ad sunt ut. Et do in adipisicing ea tempor Lorem ex anim qui pariatur fugiat est consectetur. Sunt fugiat cupidatat anim eiusmod sint officia voluptate minim eu pariatur dolore. Sit Lorem exercitation proident officia ut labore id do.
+                </Desc>
             </InfoContainer>
         </Wrapper>
         <Footer/>
-
-        Hello
        </Container>
     )
 }
