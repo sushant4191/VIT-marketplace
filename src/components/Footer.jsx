@@ -9,32 +9,34 @@ const Footer = () => {
                      textAlign: "center", 
                      marginTop: "-50px",
                      marginBottom:"10px"}}>
-          MarVIT
+          🛒MarVIT
         </h1>
         <Container>
           <Row>
             <Column>
-              <Heading>About Us</Heading>
-              <FooterLink href="#">Aim</FooterLink>
-              <FooterLink href="#">Vision</FooterLink>
+              <Heading>Useful Links</Heading>
+              <FooterLink href="#">Home</FooterLink>
+              <FooterLink href="#">About Us</FooterLink>
               <FooterLink href="#">Testimonials</FooterLink>
             </Column>
             <Column>
               <Heading>Services</Heading>
-              <FooterLink href="#">Writing</FooterLink>
-              <FooterLink href="#">Internships</FooterLink>
-              <FooterLink href="#">Coding</FooterLink>
-              <FooterLink href="#">Teaching</FooterLink>
+              <FooterLink href="#">Categories</FooterLink>
+              <FooterLink href="#">Cart</FooterLink>
+              <FooterLink href="#">Sell Here</FooterLink>
+              <FooterLink href="#">Orders</FooterLink>
             </Column>
             <Column>
               <Heading>Contact Us</Heading>
-              <FooterLink href="#">Uttar Pradesh</FooterLink>
-              <FooterLink href="#">Ahemdabad</FooterLink>
-              <FooterLink href="#">Indore</FooterLink>
-              <FooterLink href="#">Mumbai</FooterLink>
+              <FooterLink href="#">VIT- Vellore</FooterLink>
+              <FooterLink href="#">VIT- Chennai</FooterLink>
+              <FooterLink href="#">VIT- AP</FooterLink>
+              <FooterLink href="#">VIT- Bhopal</FooterLink>
             </Column>
             <Column>
-                <Heading>Sell Here</Heading>
+                <Heading>Profile</Heading>
+                <FooterLink href="#">Login</FooterLink>
+                <FooterLink href="#">Sign Up</FooterLink>
             </Column>
           </Row>
           
@@ -58,7 +60,7 @@ const Footer = () => {
                      textAlign: "center", 
                      marginTop: "12px",
                      marginBottom:"-3em"}}>
-          Made with 💗 by Sushant
+          Made with 💗 by Sushant, Abhinav & Rajan.
         </h4>
       </Box>
       
