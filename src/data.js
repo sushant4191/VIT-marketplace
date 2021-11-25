@@ -22,25 +22,44 @@ export const sliderItems=[
     },
 ]
 
-export const categories=[
-    {
-        id:1,
-        img: "https://img.etb2bimg.com/files/retail_files/portfolio/img_file-1-1603092245.PNG",
-        title: "Holiday Sale",
-    },
-    {
-        id:2,
-        img: "https://img.etb2bimg.com/files/retail_files/portfolio/img_file-1-1603092245.PNG",
-        title: "Holiday Sale",
-    },
-    {
-        id:3,
-        img: "https://img.etb2bimg.com/files/retail_files/portfolio/img_file-1-1603092245.PNG",
-        title: "Holiday Sale",
-    },
-]
+// export const categories=[
+//     {
+//         id:1,
+//         img: "https://img.etb2bimg.com/files/retail_files/portfolio/img_file-1-1603092245.PNG",
+//         title: "Holiday Sale",
+//     },
+//     {
+//         id:2,
+//         img: "https://img.etb2bimg.com/files/retail_files/portfolio/img_file-1-1603092245.PNG",
+//         title: "Holiday Sale",
+//     },
+//     {
+//         id:3,
+//         img: "https://img.etb2bimg.com/files/retail_files/portfolio/img_file-1-1603092245.PNG",
+//         title: "Holiday Sale",
+//     },
+// ]
 
-export const newProducts = [
+
+  export const categories = [
+    {
+      id: 1,
+      img: "https://images.unsplash.com/photo-1526738549149-8e07eca6c147?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80",
+      title: "Electronics",
+    },
+    {
+      id: 2,
+      img: "https://images.unsplash.com/photo-1561840884-9dda41ed54e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      title: "Bicycles",
+    },
+    {
+      id: 3,
+      img: "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      title: "Books and Study Material",
+    },
+  ];
+
+  export const newProducts = [
     {
       id:1,
       img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
@@ -67,7 +86,7 @@ export const newProducts = [
     },
     {
       id:7,
-      img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
     },
     {
       id:8,

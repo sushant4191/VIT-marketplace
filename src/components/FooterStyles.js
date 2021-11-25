@@ -7,7 +7,6 @@ export const Box = styled.div`
   bottom: 0;
   /* right:0; */
   width: 100%;
-
   @media (max-width: 1000px) {
     padding: 70px 30px;
   }
@@ -69,7 +68,6 @@ export const FooterItem = styled.div`
   margin: 20px auto;
   align-items: center;
   margin-bottom: -5px;
-
   &:hover {
       color: #2c2c2c;
       transition: 200ms ease-in;
@@ -86,11 +84,10 @@ export const Icon = styled.a`
     justify-content: center;
     margin: 10px 20px;
     transition: all 0.25s ease;
-
     &:hover{
         background-color:#e9f5f5;
         transform:scale(1.1);
     }
 `;
    
-   
+
