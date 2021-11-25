@@ -62,9 +62,6 @@ function NavBar() {
               
           </Container>
           </Navbar>
-
-
-
       </div>
   )
 };
