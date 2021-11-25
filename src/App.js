@@ -1,9 +1,7 @@
 import Home from "./pages/Home.js";
 import {
   BrowserRouter as Router,
-  Route, 
-  Switch,
-} from "react-router-dom";
+  Route} from "react-router-dom";
 import Cookies from 'js-cookie';
 import Navbar from "./components/Navbar.js";
 import Login from "./pages/Login.js";
