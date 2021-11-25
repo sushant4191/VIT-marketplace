@@ -51,6 +51,7 @@ const Arrow=styled.div`
     `;
     const Image=styled.img`
     height:85%;
+    width:100%;
     `;
 
     const InfoContainer=styled.div`

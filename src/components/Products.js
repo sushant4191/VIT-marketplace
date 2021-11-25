@@ -12,15 +12,15 @@ const Container = styled.div`
 
 function Products() {
   return (
-    <>
-    <h1 className="ml-8 font-extrabold text-4xl">New product Listings</h1>
     <Container>
+    <h1 className="ml-8 font-extrabold text-4xl">New product Listings</h1>
+    
       
-      {popularProducts.map((item) => (
+      {newProducts.map((item) => (
         <Product item={item} key={item.id} />
       ))}
     </Container>
-    </>
+
   );
 };
 
