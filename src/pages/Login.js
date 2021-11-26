@@ -48,7 +48,7 @@ function Login(props) {
         axios(config).then((res) => {
             setReponseCode(1);
             SaveCredentials(res.data.token, responseCode);
-            history.push('/dashboard');
+            history.push('/');
             window.location.reload();
             console.log("Logged In!");
         }).catch(e => console.log(e));

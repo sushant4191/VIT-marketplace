@@ -14,6 +14,7 @@ import ContactUs from "./pages/ContactUs.js";
 import ProductList from "./pages/ProductList.js";
 import ResetPassword from "./pages/ResetPassword.js";
 import EditProfile from "./pages/EditProfile.js";
+import SupportRequests from "./pages/SupportRequests.js";
 
 function App() {
   const isLoggedIn = Cookies.get('token');
@@ -33,6 +34,7 @@ function App() {
           <Route path="/allproducts" >{<ProductList />}</Route>
           <Route path="/resetpassword" >{<ResetPassword />}</Route>
           <Route path="/editprofile" >{<EditProfile />}</Route>
+          <Route path="/supportreqs" >{<SupportRequests />}</Route>
         </Switch>
       </Router>
     </div>
