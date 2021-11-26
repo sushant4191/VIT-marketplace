@@ -45,7 +45,7 @@ const Container = styled.div`
     if(products){
       return (
         <>
-        <h1 className="ml-8 font-extrabold text-4xl">New product Listings</h1>
+        {/* <h1 className="ml-8 font-extrabold text-4xl">New product Listings</h1> */}
         <Container>
           
           {products.map((item) => (
