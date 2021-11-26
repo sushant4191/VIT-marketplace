@@ -6,11 +6,10 @@ const axios = require('axios');
 function Profile() {
     const [user, setUser] = useState('');
     const [loading, setLoading] = useState(true);
-    const {email} = useParams();
 
     React.useEffect(() => {
       const getUsers = async () => {
-        const res = await axios.get("https://vit-market.herokuapp.com/products/profile",{
+        const res = await axios.get("https://vit-market.herokuapp.com/profile",{
             headers: { 
                 'Authorization': "Bearer " + Cookies.get('token')
             }
@@ -37,11 +36,11 @@ function Profile() {
             <div className="flex flex-row justify-between mt-4">
                 <div className="flex flex-col w-1/4">
                     <div><span className="font-bold">Email </span>{user.email}</div>
-                    <div><span className="font-bold">Alternate Contact </span>{user.altMob}</div>
+                    <div><span className="font-bold">Alternate Contact </span>{user.altMobile}</div>
                     <div><span className="font-bold">Address </span>{user.address}</div>
-                    <button type="button" class="py-2 my-4 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                    <Link to="/editProfile"><button type="button" class="py-2 my-4 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
                         Edit Profile
-                    </button>
+                    </button></Link>
                     <button type="button" class="py-2 my-4 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
                         View Support Requests
                     </button>
