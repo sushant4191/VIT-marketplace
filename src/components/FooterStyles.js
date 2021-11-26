@@ -61,7 +61,6 @@ export const FooterLink = styled.a`
 `;
 
 export const FooterItem = styled.div`
-  color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -87,5 +86,5 @@ export const Icon = styled.a`
     &:hover{
         background-color:#e9f5f5;
         transform:scale(1.1);
-    }
-`;
+    }`;
+  

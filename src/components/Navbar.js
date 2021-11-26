@@ -1,5 +1,4 @@
 import Cookies from 'js-cookie';
-import { Link } from 'react-router-dom';
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Button, Container, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap'
@@ -14,7 +13,6 @@ cursor: pointer;
 padding-right:1.5em;
 padding-left:2em;
 `;
-
 const isLoggedIn = Cookies.get('token');
 
 function NavBar() {
@@ -64,9 +62,6 @@ function NavBar() {
               
           </Container>
           </Navbar>
-
-
-
       </div>
   )
 };

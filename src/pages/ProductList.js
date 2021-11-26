@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar.js";
-import Announcement from "../components/Announcement.js";
+
 import Products from "../components/Products.js";
-import Newsletter from "../components/Newsletter.js";
+
 import Footer from "../components/Footer.js";
 import { mobile } from "../responsive";
 

@@ -1,26 +1,27 @@
-export const sliderItems = [
+export const sliderItems=[
     {
-      id: 1,
-      img: "https://i.ibb.co/XsdmR2c/1.png",
-      title: "SUMMER SALE",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "f5fafd",
+        id:1,
+        img: "https://staticimg.titan.co.in/production/promotions/so_onyx/D3/banner-titan1.jpg",
+        title: "Watch at Cheapest Rate",
+        desc: "Nostrud nulla aliquip deserunt deserunt ullamco ex nulla pariatur. Veniam et ea sint reprehenderit quis aute amet incididunt Lorem sunt cupidatat ipsum incididunt eiusmod. Occaecat incididunt incididunt aliqua occaecat enim laborum fugiat voluptate occaecat occaecat amet dolore.",
+        bg:"fcf1ed",
     },
     {
-      id: 2,
-      img: "https://i.ibb.co/DG69bQ4/2.png",
-      title: "AUTUMN COLLECTION",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "fcf1ed",
+        id:2,
+        img: "https://assets.materialup.com/uploads/b8c09f81-df2d-4d81-bd95-58fa1413063d/preview.png",
+        title: "Hostel Sale",
+        desc: "Nostrud nulla aliquip deserunt deserunt ullamco ex nulla pariatur. Veniam et ea sint reprehenderit quis aute amet incididunt Lorem sunt cupidatat ipsum incididunt eiusmod. Occaecat incididunt incididunt aliqua occaecat enim laborum fugiat voluptate occaecat occaecat amet dolore.",
+        bg:"fffff",
     },
     {
-      id: 3,
-      img: "https://i.ibb.co/cXFnLLV/3.png",
-      title: "LOUNGEWEAR LOVE",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "fbf0f4",
+        id:3,
+        img: "https://img.etb2bimg.com/files/retail_files/portfolio/img_file-1-1603092245.PNG",
+        title: "Holiday Sale",
+        desc: "Nostrud nulla aliquip deserunt deserunt ullamco ex nulla pariatur. Veniam et ea sint reprehenderit quis aute amet incididunt Lorem sunt cupidatat ipsum incididunt eiusmod. Occaecat incididunt incididunt aliqua occaecat enim laborum fugiat voluptate occaecat occaecat amet dolore.",
+        bg:"ffffff",
     },
-  ];
+]
+
 
   export const categories = [
     {
@@ -40,7 +41,7 @@ export const sliderItems = [
     },
   ];
 
-  export const popularProducts = [
+  export const newProducts = [
     {
       id:1,
       img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
@@ -72,5 +73,9 @@ export const sliderItems = [
     {
       id:8,
       img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+    },
+    {
+        id:9,
+        img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
     },
   ]
