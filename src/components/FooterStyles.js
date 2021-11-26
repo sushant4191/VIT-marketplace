@@ -61,7 +61,6 @@ export const FooterLink = styled.a`
 `;
 
 export const FooterItem = styled.div`
-  color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: center;
