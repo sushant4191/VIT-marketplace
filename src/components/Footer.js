@@ -8,7 +8,8 @@ function Footer() {
     <h1 style={{ color: "white", 
                  textAlign: "center", 
                  marginTop: "-50px",
-                 marginBottom:"10px"}}>
+                 marginBottom:"10px",
+                 fontSize:"35px",}}>
       🛒MarVIT
     </h1>
     <Container>
@@ -59,7 +60,8 @@ function Footer() {
       <h4 style={{ color: "white", 
                  textAlign: "center", 
                  marginTop: "12px",
-                 marginBottom:"-3em"}}>
+                 marginBottom:"-3em",
+                 fontSize:"20px"}}>
       Made with 💗 by Sushant, Abhinav & Rajan.
     </h4>
   </Box>

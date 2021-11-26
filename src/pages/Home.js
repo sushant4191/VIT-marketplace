@@ -2,8 +2,9 @@ import React from "react";
 import Categories from "../components/Categories.js";
 import Footer from "../components/Footer.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Products from "../components/Products.js";
+// import Products from "../components/Products.js";
 import Slider from "../components/Slider.js";
+import ProductsHome from "../components/ProductsHome.js";
 
 function Home() {
   const mystyle={
@@ -21,7 +22,7 @@ function Home() {
       <h1 style={mystyle}>Categories</h1>
       <Categories />
       <h1 style={mystyle}>New Product Listings</h1>
-      <Products/>
+      <ProductsHome/>
       <Footer/>
     </div>
   );
