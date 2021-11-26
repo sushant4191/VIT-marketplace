@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import styled from "styled-components";
-import { popularProducts } from "../data";
+import { newProducts } from "../data";
 import Product from "./Product.js";
 import Loader from 'react-loader-spinner';
 const axios = require('axios');
