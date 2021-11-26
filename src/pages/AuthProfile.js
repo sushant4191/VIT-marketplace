@@ -10,19 +10,12 @@ function Profile() {
 
     React.useEffect(() => {
       const getUsers = async () => {
-          const res = await axios.get("https://vit-market.herokuapp.com/products/" + email,{
-              headers: { }
+        const res = await axios.get("https://vit-market.herokuapp.com/products/profile",{
+            headers: { 
+                'Authorization': "Bearer " + Cookies.get('token')
+            }
           });
-          if(res.status == 200){
-            setUser(res.data);
-          }else{
-            const res = await axios.get("https://vit-market.herokuapp.com/products/profile",{
-              headers: { 
-                  'Authorization': "Bearer " + Cookies.get('token')
-              }
-            });
-            setUser(res.data);
-        }
+          setUser(res.data);
           
           setLoading(false);
           console.log(res.data);

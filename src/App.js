@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar.js";
 import Login from "./pages/Login.js";
 import Register from "./pages/Register.js";
 import Profile from "./pages/Profile.js";
+import AuthProfile from "./pages/AuthProfile.js";
 import AddProduct from "./pages/AddProduct.js";
 import ContactUs from "./pages/ContactUs.js";
 import ProductList from "./pages/ProductList.js";
@@ -25,7 +26,8 @@ function App() {
           <Route path="/" exact>{<Home />}</Route>
           <Route path="/login" >{<Login />}</Route>
           <Route path="/register" >{<Register />}</Route>
-          <Route path="/profile" >{<Profile />}</Route>
+          <Route path="/profile/:email" >{<Profile />}</Route>
+          <Route path="/profile/" >{<AuthProfile />}</Route>
           <Route path="/addproduct" >{<AddProduct />}</Route>
           <Route path="/contactus" >{<ContactUs />}</Route>
           <Route path="/allproducts" >{<ProductList />}</Route>

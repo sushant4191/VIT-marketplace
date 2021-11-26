@@ -1,6 +1,7 @@
 import React from "react";
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from "@material-ui/icons";
 import styled from "styled-components";
+import { Link } from 'react-router-dom'
 
 const Info = styled.div`
   opacity: 0;
@@ -65,12 +66,14 @@ const Icon = styled.div`
 
 function Product({ item }) {
   return (
-    <Container>
-      <Circle />
-      <Image src={item.img} />
+    <Container className="flex flex-col">
+      <Image src={"https://vit-market.herokuapp.com/products/" + item._id + "/picture"} />
+      <h1 className="text-2xl font-bold">{item.productName}</h1>
+      <h1 className="text-xl font-semibold text-red-500">Rs. {item.productCost}</h1>
+      <h3 className="underline text-right ml-auto mr-2 text-sm font-medium text-gray-400">Sold by: {item.postedBy}</h3>
       <Info>
         <Icon>
-          <ShoppingCartOutlined />
+          <Link to={process.env.PUBLIC_URL + "/profile/" + item.postedByEmail}><ShoppingCartOutlined /></Link>
         </Icon>
         <Icon>
           <SearchOutlined />
