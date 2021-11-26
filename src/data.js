@@ -1,8 +1,8 @@
 export const sliderItems=[
     {
         id:1,
-        img: "https://staticimg.titan.co.in/production/promotions/so_onyx/D3/banner-titan1.jpg",
-        title: "Watch at Cheapest Rate",
+        img: "https://www.teahub.io/photos/full/94-940152_dell-laptop-png-background-image-laptop-photo-high.png",
+        title: "Dell XPS Series 13''",
         desc: "Nostrud nulla aliquip deserunt deserunt ullamco ex nulla pariatur. Veniam et ea sint reprehenderit quis aute amet incididunt Lorem sunt cupidatat ipsum incididunt eiusmod. Occaecat incididunt incididunt aliqua occaecat enim laborum fugiat voluptate occaecat occaecat amet dolore.",
         bg:"fcf1ed",
     },
@@ -15,8 +15,8 @@ export const sliderItems=[
     },
     {
         id:3,
-        img: "https://img.etb2bimg.com/files/retail_files/portfolio/img_file-1-1603092245.PNG",
-        title: "Holiday Sale",
+        img: "https://cdn.theatlantic.com/thumbor/r7TeaX67Xcx4C5Dof9g93Z9G5lk=/3x314:5998x3686/1600x900/media/img/mt/2019/02/shutterstock_1163044954/original.jpg",
+        title: "Refurbished Sale",
         desc: "Nostrud nulla aliquip deserunt deserunt ullamco ex nulla pariatur. Veniam et ea sint reprehenderit quis aute amet incididunt Lorem sunt cupidatat ipsum incididunt eiusmod. Occaecat incididunt incididunt aliqua occaecat enim laborum fugiat voluptate occaecat occaecat amet dolore.",
         bg:"ffffff",
     },
@@ -44,7 +44,7 @@ export const sliderItems=[
   export const newProducts = [
     {
       id:1,
-      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
+      img:"https://www.teahub.io/photos/full/143-1430021_best-wallpapers-for-s9-plus.jpg",
     },
     {
       id:2,
@@ -52,30 +52,30 @@ export const sliderItems=[
     },
     {
       id:3,
-      img:"https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png",
+      img:"https://res.cloudinary.com/trendhim/image/upload/f_auto,c_pad,q_auto,w_1600,h_900/media/catalog/product/1/9/19751-01.jpg",
     },
     {
       id:4,
-      img:"https://www.burdastyle.com/pub/media/catalog/product/cache/7bd3727382ce0a860b68816435d76e26/107/BUS-PAT-BURTE-1320516/1170x1470_BS_2016_05_132_front.png",
+      img:"https://www.teahub.io/photos/full/184-1843864_omega-constellation-globemaster-annual-calendar-black-omega-2019.jpg",
     },
     {
       id:5,
-      img:"https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
+      img:"https://media3.bosch-home.com/Product_Shots/1600x900/MCSA00726777_E5586_TWK7804_378385_def.png",
     },
     {
       id:6,
-      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png",
+      img:"https://cdna.artstation.com/p/assets/images/images/033/821/840/medium/nipun-madusanka-5.jpg?1610648695",
     },
     {
       id:7,
-      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+      img:"https://media.cnn.com/api/v1/images/stellar/prod/210429151805-cabaeu-insert-image.jpg?q=w_1600,h_900,x_0,y_0,c_fill",
     },
     {
       id:8,
-      img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+      img:"https://www.teahub.io/photos/full/342-3426481_computer-keyboard.jpg",
     },
     {
         id:9,
-        img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+        img:"https://wallpaper.dog/large/17099993.jpg",
     },
   ]
