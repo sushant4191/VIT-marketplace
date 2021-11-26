@@ -66,8 +66,7 @@ const Icon = styled.div`
 function Product({ item }) {
   return (
     <Container>
-      <Circle />
-      <Image src={item.img} />
+      <Image src={"https://vit-market.herokuapp.com/products/" + item._id + "/picture"} />
       <Info>
         <Icon>
           <ShoppingCartOutlined />
