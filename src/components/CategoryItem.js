@@ -4,14 +4,14 @@ import {Button} from 'react-bootstrap';
 
 const Container =styled.div`
     flex:1;
-    margin:5px;
+    margin:15px;
     height:60vh;
     position:relative;
     /* display: 'flex'; */
     `;
     const Image=styled.img`
     width:100%;
-    height:80%;
+    height:100%;
     object-fit: cover;
     `;
 
@@ -25,10 +25,13 @@ const Container =styled.div`
     flex-direction: column;
     align-items:center;
     justify-content:center;
+    background-color:rgba(0,0,0,0.4);
     `;
     const Title=styled.h1`
     color:white;
     margin-bottom:20px;
+    font-size:35px;
+    
     `;
 
 

@@ -36,7 +36,7 @@ const Arrow=styled.div`
     display: flex;
     transition:all 1.5s ease;
     transform: translateX(${(props)=>props.slideIndex*-100}vw); 
-    `
+    `;
     const Slide=styled.div`
     width:100vw;
     height:100vh;
@@ -47,11 +47,12 @@ const Arrow=styled.div`
 
     const ImageContainer=styled.div`
     height:100%;
-    flex:1;
+    flex:2;
     `;
+
     const Image=styled.img`
     height:85%;
-    width:100%;
+    /* width:100%; */
     `;
 
     const InfoContainer=styled.div`
@@ -82,7 +83,6 @@ function Slider() {
         }
     };
     return (
-        <div>
         <Container>
         <Arrow direction="left" onClick={()=>handleClick("left")}>
             <ArrowLeftOutlined/>
@@ -108,8 +108,7 @@ function Slider() {
             <ArrowRightOutlined/>
         </Arrow>
         </Container>
-                        </div>
-                    )
+        )
 };
 
 export default Slider;

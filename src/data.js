@@ -22,24 +22,6 @@ export const sliderItems=[
     },
 ]
 
-// export const categories=[
-//     {
-//         id:1,
-//         img: "https://img.etb2bimg.com/files/retail_files/portfolio/img_file-1-1603092245.PNG",
-//         title: "Holiday Sale",
-//     },
-//     {
-//         id:2,
-//         img: "https://img.etb2bimg.com/files/retail_files/portfolio/img_file-1-1603092245.PNG",
-//         title: "Holiday Sale",
-//     },
-//     {
-//         id:3,
-//         img: "https://img.etb2bimg.com/files/retail_files/portfolio/img_file-1-1603092245.PNG",
-//         title: "Holiday Sale",
-//     },
-// ]
-
 
   export const categories = [
     {
